@@ -34,3 +34,11 @@ sudo apt-get upgrade
 # sudo apt-get upgrade is used to install the newest versions of all packages currently installed 
 # on the system from the sources enumerated in /etc/apt/sources.list. 
 
+
+# aplay is a command-line audio file player for the ALSA sound card driver
+aplay -l
+
+# The lspci (list PCI) Linux command displays information about each PCI bus on your system.
+lspci
+
+
