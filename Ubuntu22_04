@@ -42,3 +42,10 @@ aplay -l
 lspci
 
 
+# how to edit alsa base conf file:
+sudo gedit /etc/modprobe.d/alsa-base.conf
+
+# trying to add these lines at the end:
+options snd-hda-intel single_cmd=1
+options snd-hda-intel probe_mask=1
+options snd-hda-intel model=basic
