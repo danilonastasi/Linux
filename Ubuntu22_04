@@ -2,6 +2,7 @@
 # how to set fullscreen mode in Ubuntu 22.04 after installation through Hiper-V Virtual machine
 
 # from terminal:
+
 sudo nano /etc/default/grub
 
 # Then, change the GRUB_CMDLINE_LINUX_DEFAULT variable to the following:
@@ -9,6 +10,7 @@ sudo nano /etc/default/grub
 # Press Ctrl+X to exit nano editor and then Y followed by Enter to save the changes.
 
 # from terminal:
+
 sudo update-grub
 sudo reboot
 
@@ -17,9 +19,18 @@ sudo reboot
 
 
 # to download package information from all configured sources type from terminal:
+
 sudo apt-get update 
+
+# sudo apt-get update is used to resynchronize the package index files from their sources. 
+# The indexes of available packages are fetched from the location(s) specified in /etc/apt/sources.list.
+
 
 # to install available upgrades of all packages currently installed on the system 
 # from the sources configured via sources.list file. type from terminal:
+
 sudo apt-get upgrade
+
+# sudo apt-get upgrade is used to install the newest versions of all packages currently installed 
+# on the system from the sources enumerated in /etc/apt/sources.list. 
 
