@@ -8,8 +8,18 @@ sudo nano /etc/default/grub
 # GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
 # Press Ctrl+X to exit nano editor and then Y followed by Enter to save the changes.
 
-# from terminal
+# from terminal:
 sudo update-grub
 sudo reboot
 
 # that's it
+
+
+
+# to download package information from all configured sources type from terminal:
+sudo apt-get update 
+
+# to install available upgrades of all packages currently installed on the system 
+# from the sources configured via sources.list file. type from terminal:
+sudo apt-get upgrade
+
