@@ -45,7 +45,25 @@ lspci
 # how to edit alsa base conf file:
 sudo gedit /etc/modprobe.d/alsa-base.conf
 
-# trying to add these lines at the end:
-options snd-hda-intel single_cmd=1
-options snd-hda-intel probe_mask=1
-options snd-hda-intel model=basic
+
+
+# installing Ubuntu 22.04 through Virtualbox 6.1.42:
+
+# after installation do something:
+# from terminal:
+sudo apt update
+sudo apt install -y build-essential linux-headers-$(uname -r)
+
+# click on 'Devices' in the menu on the top and select 'Insert Guest Additions CD image'
+# now, on the left side of the screen you see the disk --> open it
+# find the 'file autorun.sh'  -->  right click --> 'Run as a Program'
+# at the end of the process, close all windows and restart the system
+
+# to the end: clcik on 'View' in the menu  -->  'Full Screen Mode'  -->  'switch'
+
+# that's it!
+
+
+
+
+
