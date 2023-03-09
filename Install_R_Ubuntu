@@ -1,6 +1,49 @@
 # installing R language in Linux Ubuntu 22.04
 
 
+# from the link https://itslinuxfoss.com/install-r-ubuntu-22-04/
+
+# Update and Upgrade the Ubuntu 22.04
+# To update and upgrade packages on Ubuntu 22.04, firstly, open up the terminal 
+# by pressing “CTRL+ALT+T” and execute the following command:
+sudo apt update
+
+# Now, upgrade the system packages with the help of the following command:
+sudo apt upgrade
+
+# Now, on your Ubuntu 22.04 system, download and install required dependencies. 
+# These dependencies are used to execute the R on Ubuntu 22.04. Run the following 
+# command for the specified purpose:
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+
+# Authenticate the installed packages by writing out the following command:
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+# Next, import the GPG key in your system through below command:
+wget -O- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/cran.gpg
+
+# After importing the GPG key, you need to add the CRAN repository that is highly recommended for R installation:
+echo deb [signed-by=/usr/share/keyrings/cran.gpg] https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/ | sudo tee /etc/apt/sources.list.d/cran.list
+
+# Once the repository is imported, refresh the APT repository list by using the update command:
+sudo apt update
+
+# Now, your Ubuntu 22.04 system is ready to install the R language from the CRAN repository. 
+To do so, type the following command:
+sudo apt install r-base
+
+# After installing the R language on Ubuntu 22.04, verify its existence by checking the build version:
+R --version
+
+# Next, run the R environment first by using “R” command in the terminal:
+sudo R
+
+
+
+
+
+# R Website:
+
 # Run these lines (if root, remove sudo) to tell Ubuntu about the R binaries at CRAN.
 
 # update indices
