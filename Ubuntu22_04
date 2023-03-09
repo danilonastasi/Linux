@@ -65,5 +65,12 @@ sudo apt install -y build-essential linux-headers-$(uname -r)
 
 
 
+# To list all python versions in default locations
+ls /usr/bin/python*
+
+# To remove just python3 package
+sudo apt-get remove python3.5
+
+
 
 
