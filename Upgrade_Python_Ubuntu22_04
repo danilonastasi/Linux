@@ -1,0 +1,7 @@
+
+# For Python 3
+sudo apt install python3-pip
+
+# from ubuntu terminal:
+python3 -m pip install numpy   # to install library numpy
+
