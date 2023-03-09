@@ -8,10 +8,9 @@
 # To install RStudio on Ubuntu 22.04, you will require the following steps.
 
 # Execute the following command to download the RStudio deb package on Ubuntu 22.04:
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2022.02.1-461-amd64.deb
-
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2022.12.0-353-amd64.deb # link from  https://posit.co/download/rstudio-desktop/
 # Now use the following command to run the RStudio installation using dpkg.
-sudo dpkg -i rstudio-2022.02.1-461-amd64.deb
+sudo dpkg -i rstudio-2022.12.0-353-amd64.deb
 # This will install  RStudio on Ubuntu. Use the “rstudio” command in the terminal to run it or find it in the applications.
 
 
