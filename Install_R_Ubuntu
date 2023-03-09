@@ -38,6 +38,12 @@ R --version
 # Next, run the R environment first by using “R” command in the terminal:
 sudo R
 
+# to install packages like 'raster' do first:
+sudo apt-get install libgdal-dev  # to install library GDAL
+
+# from R terminal:
+install.packages("raster")
+
 
 
 
