@@ -1,0 +1,89 @@
+Steps to install MYSQL server and MySQL workbench on Ubuntu 22.04
+
+
+
+# How to install MySQL server on Ubuntu 22.04
+# from the link https://www.youtube.com/watch?v=Cmdrb420NNw:
+# from the ubuntu terminal:
+
+sudo apt update
+sudo apt install mysql-server
+# to login in sql:
+sudo mysql
+# now the terminal is under MySQL:
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';
+exit # to back to ubuntu terminal
+# type:
+sudo mysql_secure_installation
+# enter the password you decided
+# - click yes
+# - click a number between 0 and 2
+# - click no
+# - click yes
+# - click yes
+# - click yes
+# - click yes
+
+# to login now in your MySQL you need to enter user and password so:
+sudo mysql -u root -p 
+# enter password sql
+# now you anre in MySQL terminal
+# let's create a database:
+
+CREATE DATABASE exampleDB;
+show schemas;
+# you get result
+
+# it is better to create a new user, user root is not the best option:
+CREATE USER 'abstract-programemr'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yournewpassword'; 
+# it is better do not use the same password used for other users or root
+
+use mysql;
+select user from user;
+grant all on exxampleDB.* to 'abstract-programmer'@'localhost';
+exit
+
+# that's done! You are using the MySQL 'abstract-programmer'. Remember that when you configure the MySQL workbench.
+
+
+# let's install MySQL workbench:
+
+
+# from the link https://www.youtube.com/watch?v=EYc9DNYyiW4
+# here you can follow steps abou installation MySQL server and MySQL workbench:
+
+# MySQL Workbench installation and test - Solution 1
+
+# from the website https://www.mysql.com/it/ download MySQL workbench for your Distro Linux
+# in my case Ubuntu 22.04 (I download the small size file .deb)
+# from the ubuntu terminal:
+cd Downloads
+ls   # find the .deb file you downloaded
+# let's install MySQL workbench
+sudo apt install ./mysql-workbench-community_8.0.32-1ubuntu22.04_amd64.deb
+
+# run from the app menu MySql workbench
+# you will find a rrot connection which is not the one we want to use (we decided in the configuration server MySQL)
+# right clich and delete this connection
+# create a new connection: decide a name, Hostname and Port don't change
+# username type the name you decided in the server configuration
+# press ok
+# Now you can connect to the server typing the password you decided
+
+
+
+# MySQL Workbench installation - Solution 2
+
+# from https://itslinuxfoss.com/install-mysql-workbench-on-ubuntu-22-04/
+
+# The MYSQL workbench is available via snap. You can install MYSQL Workbench 
+# on Ubuntu 22.04 via the following command:
+sudo snap install mysql-workbench-community
+
+# if you don't have installed any MySQL server, you can't start using the workbench
+
+#How to Remove MYSQL Workbench from Ubuntu 22.04?
+# If you have installed MYSQL Workbench on Ubuntu 22.04 using the terminal. 
+# You can remove/uninstall it with the help of the following command:
+sudo snap remove mysql-workbench-community
+
