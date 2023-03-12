@@ -1,0 +1,186 @@
+
+
+*** 1. Address Bar ***
+
+Alt+D/Ctrl+L
+	Jump to address bar
+
+
+*** 3. Navigation ***
+
+Alt+Home
+	ump to homepage
+
+Alt+Arrow Left/Arrow Right
+	One page backward / one page forward
+
+Ctrl+T
+	Open new tab in same window
+
+Ctrl+Tab/Ctrl+Page Down
+	jump to next browser tab
+
+Ctrl+Shift+Tab/Ctrl+Page Up
+	Jump to previous browser tab
+
+Alt+1...8
+	Jump to browser tab 1 - 8
+
+Alt+9
+	Jump to the rightmost tab regardless on how many tabs are open
+
+Ctrl+W/Ctrl+Q
+	Close current browser tab
+
+Ctrl+Shift+T
+	Undo close browser tab
+
+
+*** 4. Inside Webpages ***
+
+Alt+d, then press tab twice (or three times)
+	Get "focus" on webpage for in-page keyboard navigation. Note the dotted frame around the page
+
+Arrow Down/Arrow Up
+	Scroll webpages up or down one line
+
+Page Down/Page Up  or
+space/shift+space
+	Scroll webpages up or down one page.  does the same.
+
+Home/End
+	Jump to beginning / end of webpage
+
+Tab/Shift+Tab
+	Jump to next / jump to previous link
+
+Shift+Ctrl+Enter
+	Open selected link in new foreground tab
+
+Ctrl+Enter
+	Open selected link in new background tab
+
+Shift+Enter
+	Open selected link in new window
+
+Alt+Enter
+	Download selected link
+
+Ctrl+[+]/Ctrl+-
+	Increase or decrease text size
+
+Ctrl+0 (zero)
+	Default text size
+
+F5/Ctrl+R
+	Reload page
+
+Ctrl+F5/Ctrl+R
+	Reload page with cache override
+
+Esc
+	Stop loading page
+
+F6/Shift+F6
+	Jump forwards / jump backwards between tab bar and page. To reach addressbar, press f6 until reaching the tab (see dotted line around tab) and press tab
+
+Shift+F10
+	Open context menu of a hyperlink. Press arrow up or down or initial letter to select command
+
+Ctrl+A
+	Select all, useful to copy and paste text out of webpages
+
+Ctrl+P
+	Print
+
+Alt+f, then v
+	Print preview
+
+Ctrl+U
+	Show page source
+
+Ctrl+S
+	Save page as
+
+*** 5. Search ***
+
+Ctrl+F/[/]
+	Open "quick find" window and searches phrase as you type
+
+Ctrl+G/ enter or f3
+	Find next occurrence of search term.
+
+Ctrl+Shift+G/Shift+F3
+	Find previous occurrence of search term.
+
+Esc
+	Close search window
+
+	
+*** 6. Bookmarks ***
+
+Ctrl+B/Ctrl+I
+	Show or hide bookmark sidebar
+
+Ctrl+Shift+B
+	Organize bookmarks
+
+Ctrl+D
+	Add bookmark
+
+Ctrl+Shift+D
+	Bookmark all tabs. In the "create in" menu, use alt+down to choose bookmark destination
+
+Alt+b, then press a-z / number
+	Open bookmark menu and press first letter of a bookmark name to load them. More than one entry with the same letter, requires to repeatedly pressing the letter and hit enter
+
+
+*** 7. Firefox Features ***
+
+Ctrl+J
+	Open or close download window
+
+Ctrl+H
+	Show or hide browsing history
+
+Ctrl+Shift+Delete
+	Clear private data (menu)
+
+Ctrl+O
+	Open file
+
+Ctrl+L
+	Open Location
+
+Alt+F
+	Open file menu
+
+Alt+E
+	Open edit menu
+
+Alt+V
+	Open view menu
+
+Alt+S
+	Open history menu
+
+Alt+B
+	Open bookmark menu
+
+Alt+T
+	Open tools menu
+
+Alt+H
+	Open help menu
+
+
+*** 10. The Rest ***
+
+Ctrl+Shift+I
+	Open or close webpage Inspector
+
+Ctrl+Shift+J
+	Open Java Error Console. Press escape to close
+
+F1
+	Firefox (online) help
