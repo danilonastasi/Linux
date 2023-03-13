@@ -1,0 +1,15 @@
+
+# to share the folder with Virtualbox on Winsodw using Linux Ubuntu 22.04:
+
+# start Ubuntu on the Virtualbox
+# click on devices in the menu  --> Shared Folders
+# add a new shared folder  --> auto-mount, make permanent 
+
+# after this operation the folder doesn't have the permission:
+# open terminal ubuntu
+
+sudo su
+sudo usermod -a -G vboxsf danilo  # danilo is the account name you can see in the terminal
+sudo chown -R danilo:users /media/your_share_folder_name/
+
+# reboot the machine and check if it works
